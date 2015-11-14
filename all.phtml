@@ -10,8 +10,27 @@
  */
 /* @var $this App */
 ?>
-<?= $this->Template('app:/_social/twitter.phtml') ?>
-<?= $this->Template('app:/_social/facebook.phtml') ?>
-<?= $this->Template('app:/_social/hatena.phtml') ?>
-<?= $this->Template('app:/_social/mixi.phtml') ?>
-<?= $this->Template('app:/_social/google+.phtml') ?>
+<ul id="op-unit-social">
+	<li><?= $this->Template('app:/_social/twitter.phtml') ?></li>
+	<li><?= $this->Template('app:/_social/facebook.phtml') ?></li>
+	<li><?= $this->Template('app:/_social/hatena.phtml') ?></li>
+	<li><?= $this->Template('app:/_social/mixi.phtml') ?></li>
+	<li><?= $this->Template('app:/_social/google+.phtml') ?></li>
+</ul>
+
+<style>
+/* social button */
+#op-unit-social {
+	margin-top: 0;
+	padding: 0 0 0 0.5em;
+}
+
+#op-unit-social li {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.fb_iframe_widget > span {
+	vertical-align: baseline !important;/* adjust vertical align for facebook like button. */
+}
+</style>
