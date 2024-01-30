@@ -1,21 +1,19 @@
 <?php
-/**
- * all.phtml
- * 
+/** op-unit-social:/all.phtml
+ *
  * @creation  2015-11-13
  * @version   1.0
  * @package   op-unit-social
  * @author    Tomoaki Nagahara <tomoaki.nagahara@gmail.com>
  * @copyright 2015 (C) Tomoaki Nagahara All right reserved.
  */
-/* @var $this App */
 ?>
 <ul id="op-unit-social">
-	<li><?= $this->Template('app:/_social/twitter.phtml') ?></li>
-	<li><?= $this->Template('app:/_social/facebook.phtml') ?></li>
-	<li><?= $this->Template('app:/_social/hatena.phtml') ?></li>
-	<li><?= $this->Template('app:/_social/mixi.phtml') ?></li>
-	<li><?= $this->Template('app:/_social/google+.phtml') ?></li>
+	<li><?= OP()->Template('twitter.phtml') ?></li>
+	<li><?= OP()->Template('facebook.phtml') ?></li>
+	<li><?= OP()->Template('hatena.phtml') ?></li>
+	<li><?= OP()->Template('mixi.phtml') ?></li>
+	<li><?= OP()->Template('google+.phtml') ?></li>
 </ul>
 
 <style>

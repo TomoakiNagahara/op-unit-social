@@ -1,23 +1,21 @@
 <?php
-/**
- * hatena.phtml
- * 
+/** op-unit-social:/hatena.phtml
+ *
  * @creation  2015-11-13
  * @version   1.0
  * @package   op-unit-social
  * @author    Tomoaki Nagahara <tomoaki.nagahara@gmail.com>
  * @copyright 2015 (C) Tomoaki Nagahara All right reserved.
  */
-/* @var $this App */
 ?>
 <!-- Hatena -->
 <a href="http://b.hatena.ne.jp/entry/"
 	class="hatena-bookmark-button"
 	data-hatena-bookmark-layout="simple-balloon"
-	title="<?= $this->Ja('このエントリーをはてなブックマークに追加') ?>"
+	title="<?= OP()->Translate->String('このエントリーをはてなブックマークに追加') ?>"
 >
 <img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png"
-	alt="<?= $this->Ja('このエントリーをはてなブックマークに追加') ?>"
+	alt="<?= OP()->Translate->String('このエントリーをはてなブックマークに追加') ?>"
 	width="20"
 	height="20"
 	style="border: none;"
@@ -25,5 +23,5 @@
 </a>
 <script type="text/javascript"
 		src="https://b.st-hatena.com/js/bookmark_button.js"
-		charset="utf-8" async="async">
+		charset="utf-8" >
 </script>
